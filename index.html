@@ -22,11 +22,8 @@
 <canvas id="snowField"></canvas>
 
 <script>
-#canvas{
-    width:100vw;
-    height:100vh;
-}
-    
+
+//Fluidity block starts
 var canvas = document.querySelector('#snowField');
 var ctx = canvas.getContext('2d');
 
@@ -34,8 +31,23 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 
+#canvas{
+    width:100vw;
+    height:100vh;
+}
+    
+    var rect = canvas.getBoundingClientRect();  // get absolute size in pixels
+canvas.width = rect.width;
+canvas.height = rect.height;
+
+var timer;
+window.addEventListener("resize", function () {
+  clearTimeout(timer);
+  timer = setTimeout(updateCanvas, 100);  // adjust time to liking
+});
 
 
+//Fluidity block ends
 
 var totalSnow = 300;
 
