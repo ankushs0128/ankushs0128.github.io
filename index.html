@@ -40,11 +40,7 @@ canvas.height = window.innerHeight;
 canvas.width = rect.width;
 canvas.height = rect.height;
 
-var timer;
-window.addEventListener("resize", function () {
-  clearTimeout(timer);
-  timer = setTimeout(updateCanvas, 100);  // adjust time to liking
-});
+
 
 
 //Fluidity block ends
