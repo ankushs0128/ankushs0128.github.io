@@ -10,7 +10,7 @@
             padding: 0;
         }
         body {
-            background: url(bg_AI_copy.jpg);
+            background: url(bg_AI_length.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
@@ -73,8 +73,9 @@ imgLight.src = 'light.png';
 function draw() {
     console.log(imgTree.height);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.drawImage(imgTree, 0, canvas.height - imgTree.height/4 + 50, 350, 550);
-    ctx.drawImage(imgLight, canvas.width - imgLight.width/3, 0, imgLight.width/6, imgLight.height/6);
+    ctx.drawImage(imgTree, 0, canvas.height - imgTree.height/4 + 60, 250, 550);
+    ctx.drawImage(imgLight, canvas.width - imgLight.width/5, 0, imgLight.width/6, imgLight.height/8);
+    ctx.drawImage(imgLight, canvas.width - imgLight.width/2.2, 0, imgLight.width/6, imgLight.height/8);
     
   
    ctx.textAlign = "justify";
@@ -87,7 +88,7 @@ function draw() {
   ctx.font = '18px Segoe UI, sans-serif';
          ctx.fillStyle = "#FFFFFF";
          ctx.textAlign = "left";
-    ctx.fillText('Register before November 5,2021', 1140, 710,440);
+    ctx.fillText('Register before November 5,2021', 40, 720,440);
 
      
 
