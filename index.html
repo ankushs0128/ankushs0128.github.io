@@ -78,17 +78,17 @@ function draw() {
     ctx.drawImage(imgLight, canvas.width - imgLight.width/2.5, 0, imgLight.width/6, imgLight.height/10);
     
   
-   ctx.textAlign = "left";
+   ctx.textAlign = "center";
    ctx.font = '18px Segoe UI, sans-serif';
    ctx.fillStyle = "#F8C9BF";
-    ctx.fillText('Vipps : 000000000', 1250, 690);
-    ctx.fillText('A/C : 000000000000', 1250, 710);
+    ctx.fillText('Vipps : 000000000', 810, 700);
+    ctx.fillText('A/C : 000000000', 810, 720);
 
 
   ctx.font = '18px Segoe UI, sans-serif';
-         ctx.fillStyle = "White";
+         ctx.fillStyle = "#F8C9BF";
          ctx.textAlign = "left";
-    ctx.fillText('Register before November 5,2021', 40, 720,440);
+    ctx.fillText('Register before November 5,2021', 1160, 680,440);
 
      
 
@@ -100,7 +100,8 @@ function draw() {
         var Links = new Array(); // Links information
         var hoverLink = ""; // Href of the link which cursor points at
         ctx.fillStyle = "#FFFFF"; // Default blue link color
-        ctx.font='32px Segoe UI';
+        ctx.font='24px Segoe UI';
+
         //ctx.font = "24px Courier New"; // Monospace font for links
         ctx.textBaseline = "top"; // Makes left top point a start point for rendering text
 
@@ -180,7 +181,7 @@ function draw() {
         //drawLink(150,710,"https://www.ous-research.no/julebord/","Click here to Register");
         
  //#####TOP RIGHT link
-        drawLink(1140,650,"https://www.ous-research.no/julebord/","Click here to Register")
+        drawLink(700,670,"https://www.ous-research.no/julebord/","Click here to Register")
 
 
 
