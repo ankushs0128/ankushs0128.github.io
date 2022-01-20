@@ -1,4 +1,4 @@
-![Logo](/assets/images/logo-image.jpg)
+![Logo](/assets/images/bcblogo.jpg)
 
 # Aviation-Consultancy Project Testing Details #
 
